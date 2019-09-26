@@ -4,17 +4,21 @@
 bags = []
 for i in range (4):
     candies=int(input(" "))
-    boags.append(candies)
+    bags.append(candies)
 
-bags[0]+bags[1] = a
-bags[0]+bags[2] = b
-bags[0]+bags[3] = c
-bags[1]+bags[2] = d
-bags[1]+bags[3] = e
-bags[2]+bags[3] = f
-if (a%2==0 or b%2==0 or c%2==0 or d%2==0 or e%2==0 f%2==0):
+if(bags[0]+bags[1] == bags[2]+bags[3]):
+    print("yes")
+elif(bags[0]+bags[2] == bags[1]+bags[3]):
+    print("yes")
+elif(bags[0]+bags[3] == bags[1]+bags[2]):
+    print("yes")
+elif(bags[1]+bags[2] == bags[0]+bags[3]):
+    print("yes")
+elif(bags[1]+bags[3] == bags[0]+bags[2]):
+    print("yes")
+elif(bags[2]+bags[3] == bags[0]+bags[1]):
     print("yes")
 else:
     print("no")
-    
-    
+
+
